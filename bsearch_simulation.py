@@ -28,10 +28,7 @@ def binary_search(x, target, low=None, high=None):
         return binary_search(x, target, midp+1, high)   
 
 if __name__ == "__main__":
-    x = [1, 3, 5, 10, 12]
-    target = 5
-    print(standerd_search(x, target))
-    print(binary_search(x, target))
+    
 
     length = 10000
 
