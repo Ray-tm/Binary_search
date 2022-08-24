@@ -1,13 +1,14 @@
 import random
 import time
 
+# Standerd search method#
 def standerd_search(x, target):
     for i in range(len(x)):
         if  x[i] == target:
             return i
     return -1
 
-
+#binary search#
 def binary_search(x, target, low=None, high=None):
     if low is None:
         low = 0
@@ -44,7 +45,7 @@ if __name__ == "__main__":
     end = time.time()        
     print("Naive search time: ", (end - start)/length, "seconds")
 
-
+#This code measures the difference between the start time and end time for the 10000 iterations #
     start = time.time()
     for target in sorted_list:
             binary_search(sorted_list, target)
